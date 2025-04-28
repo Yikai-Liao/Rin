@@ -57,9 +57,20 @@ export function FeedCard({ id, title, avatar, draft, listed, top, summary, hasht
                             <img src={avatar} alt=""
                                 className="object-cover object-center w-full max-h-96 hover:scale-105 translation duration-300" />
                         </div>}
-                    <h1 className="text-xl font-bold text-gray-700 dark:text-white text-pretty overflow-hidden">
-                        {title}
-                    </h1>
+                    <div className="flex items-center justify-between">
+                        <h1 className="text-xl font-bold text-gray-700 dark:text-white text-pretty overflow-hidden">
+                            {title}
+                        </h1>
+                        {draft === 1 && (
+                            <button
+                                onClick={handleRemoveFromDraft}
+                                className="ml-4 px-3 py-1 bg-green-100 text-green-800 text-xs rounded-md hover:bg-green-200 flex items-center"
+                            >
+                                <i className="ri-send-plane-fill mr-1"></i>
+                                Publish
+                            </button>
+                        )}
+                    </div>
                     <p className="space-x-2">
                         <span className="text-gray-400 text-sm" title={new Date(createdAt).toLocaleString()}>
                             {createdAt === updatedAt ? timeago(createdAt) : t('feed_card.published$time', { time: timeago(createdAt) })}
@@ -88,14 +99,6 @@ export function FeedCard({ id, title, avatar, draft, listed, top, summary, hasht
                         </div>
                     }
                 </Link>
-                {draft === 1 && (
-                    <button
-                        onClick={handleRemoveFromDraft}
-                        className="absolute top-4 right-4 px-2 py-1 bg-theme text-white text-xs rounded-md hover:bg-theme-hover"
-                    >
-                        {t("remove_from_draft")}
-                    </button>
-                )}
             </div>
             <ConfirmUI />
             <AlertUI />
