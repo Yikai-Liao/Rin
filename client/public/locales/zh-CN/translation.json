@@ -130,6 +130,9 @@
     "title": "发布"
   },
   "reload": "重试",
+  "remove_from_draft": "移出草稿箱",
+  "remove_from_draft.success": "已移出草稿箱",
+  "remove_from_draft.confirm": "确定将此文章移出草稿箱吗？",
   "save": "保存",
   "settings": {
     "cache": {
@@ -190,7 +193,7 @@
     "import_success$success$skipped": "导入成功，{{success}} 篇文章导入成功，{{skipped}} 篇文章跳过",
     "login": {
       "enable": {
-        "desc": "开启/关闭右上角登录按钮，关闭后可通过「双击」底部文字 “© 2024 Powered by” 「三次」触发登录入口",
+        "desc": "开启/关闭右上角登录按钮，关闭后可通过「双击」底部文字 \"© 2024 Powered by\" 「三次」触发登录入口",
         "title": "启用右上角登录按钮"
       }
     },

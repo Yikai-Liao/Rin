@@ -126,10 +126,13 @@
   "preview": "Preview",
   "previous": "Previous Page",
   "publish": {
-    "success": "Publish successful",
+    "success": "Published successfully",
     "title": "Publish"
   },
   "reload": "Retry",
+  "remove_from_draft": "Remove from drafts",
+  "remove_from_draft.success": "Removed from drafts",
+  "remove_from_draft.confirm": "Are you sure you want to remove this article from drafts?",
   "save": "Save",
   "settings": {
     "cache": {

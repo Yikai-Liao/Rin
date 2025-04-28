@@ -129,7 +129,10 @@
     "success": "公開に成功しました",
     "title": "公開"
   },
-  "reload": "再試行",
+  "reload": "リトライ",
+  "remove_from_draft": "下書きから削除",
+  "remove_from_draft.success": "下書きから削除されました",
+  "remove_from_draft.confirm": "この記事を下書きから削除してもよろしいですか？",
   "save": "保存",
   "settings": {
     "cache": {
