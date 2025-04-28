@@ -39,9 +39,7 @@ export function FeedCard({ id, title, avatar, draft, listed, top, summary, hasht
                     if (error) {
                         showAlert(error.value as string);
                     } else {
-                        showAlert(t("remove_from_draft.success"), () => {
-                            window.location.reload();
-                        });
+                        window.location.reload();
                     }
                 });
             }
@@ -67,7 +65,7 @@ export function FeedCard({ id, title, avatar, draft, listed, top, summary, hasht
                                 className="ml-4 px-3 py-1 bg-green-100 text-green-800 text-xs rounded-md hover:bg-green-200 flex items-center"
                             >
                                 <i className="ri-send-plane-fill mr-1"></i>
-                                Publish
+                                {t("publish.title")}
                             </button>
                         )}
                     </div>
